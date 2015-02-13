@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Flashback Media | Fotografía Holística</title>
+	<meta name=”description” content=”Somos un colectivo de profesionales de la fotografía y la prodcción audiovisual, enfocados en crear momentos y recuerdos para todos y cada uno de nuestros clientes. Buscamos generar una mezcla entre las técnicas clásicas y las de vanguardia.”>
+	<meta name="keywords" content="palabras clave ">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+</head>
+<body>
+	<input type="checkbox" id="sidebartoggler">
+	<div class="page-wrap">
+		<label for="sidebartoggler" class="toggle">☲</label>
+		<div id="page-content">	
+				<header id="main">
+					<h1>Flashback Media</h1>
+					<nav class="sidebar cl-effect-1">	
+						<ol>
+							<li class="menu0"><a href="#intro">Home</a></li>
+							<li class="menu1"><a href="#">El Colectivo</a></li>
+							<li class="menu2"><a href="#">El Equipo</a></li>
+							<li class="menu3"><a href="#">Fotografía</a></li>
+							<li class="menu4"><a href="#">Video</a></li>
+							<li class="menu5"><a href="#">Contáctanos</a></li>
+						</ol>
+					</nav>
+				</header>
+				<section id="intro">
+					<figure class="logo"><img src="assets/svg/logo.svg"></figure>
+				</section>
+		</div>
+	</div>
+	<script type="text/javascript">
+		$(document).ready(function(e) {
+    		$("#main nav li a").click(function(e) {
+       	 		$("#sidebartoggler").prop('checked', false);
+    		});
+		});
+	</script>
+</body>
+</html>
